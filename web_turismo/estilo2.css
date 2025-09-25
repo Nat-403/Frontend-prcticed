@@ -1,0 +1,278 @@
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  overflow-x: hidden;
+}
+
+.arriba {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 20px; 
+  background-image: url("header.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.logo {
+  margin: 0;
+  position: static;
+}
+
+.logo-img {
+  height: 45px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.nav {
+  margin: 0;
+  width: auto;
+  padding: 10px;
+  background-color: rgb(187, 192, 192, 0.3);
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a:hover {
+  color: #f79947;
+}
+
+.nav-link {
+  margin: 10px 45px;
+  text-decoration: none;
+  color: rgb(126, 125, 125);
+  text-shadow: 1px 1px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-link i {
+  margin-right: 5px;
+  
+}
+
+.redes{
+  position: relative;
+  margin: 10px 10px;
+  padding: 5px;
+  width: 25px;
+  height: 25px ;
+  color: rgb(126, 125, 125);
+}
+
+.banner {
+  background-color: rgba(141, 146, 146, 0.3);
+  margin-top: 320px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 15px;
+}
+
+h1 {
+  
+  font-size: 32px;
+  font-weight: bold;
+  color: #f79947;
+  text-align: center;
+  text-shadow: 1px 1px rgb(87, 84, 84);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.centro {
+  display: flex;
+  margin: 10px 0;
+}
+
+.left-column {
+  background-color: rgb(209, 207, 207);
+  padding: 10px;
+  margin-right: 10px;
+  width: 80%;
+}
+
+.right-column {
+  text-align: center;
+  background-color: rgb(194, 193, 193);
+  padding: 10px;
+  width: 20%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.article {
+  flex-direction: column;
+  background-color: white;
+  display: flex;
+  width: 85%;
+  height: auto;
+  margin: 10px 10px;
+  padding: 20px 20px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #f3f1ef;
+  background-color: rgb(245, 164, 164);
+  text-align: center;  
+}
+
+.contenido {
+  width: auto;
+}
+.navegacion {
+  color: rgb(17, 16, 16);
+  font-weight: bold;
+  padding: 20px;
+  margin: 10px 10;
+}
+
+h3 {
+  font-size: 18px;
+  padding: 20px;
+  margin: 5px 0;
+}
+
+.arriba,
+.centro,
+.abajo {
+  background-color: rgb(235, 230, 230);
+  padding: 20px;
+  margin: 10px;
+}
+
+.pie {
+  background-color: #edece6;
+  padding: 30px;
+  text-align: center;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .header {
+    height: 300px;
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+  }
+
+  .nav {
+    width: auto;
+    padding: 10px;
+  }
+
+  .nav-link {
+    margin: 10px 10px;
+  }
+
+  .redes {
+    margin: 10px 0;
+  }
+
+  .banner {
+    background-color: rgba(141, 146, 146, 0.3);
+    margin-top: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 15px;
+  }
+
+  .arriba,
+  .centro,
+  .abajo {
+    margin-right: 10px;
+  }
+
+  .centro {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: auto;
+    margin: 5px 0;
+  }
+}
+
+ .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+@media (max-width: 480px) {
+  .arriba,
+  .centro,
+  .abajo {
+    margin-right: 10px;
+  }
+  .header {
+    height: auto;
+    padding: 20px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("header.jpg");
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  .logo-img {
+    margin: 0 0;
+  }
+
+  .nav {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .nav-link {
+  margin: 5px 10px;
+  display: inline-block;
+  }
+
+  .redes {
+    margin: 5px 0;
+    padding: 0;
+  }
+  .banner {
+  margin: auto;
+  width: auto;
+  padding: 10px;
+  }
+
+  .centro {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: auto;
+    margin: 0 0;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
